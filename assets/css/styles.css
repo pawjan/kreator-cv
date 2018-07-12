@@ -215,7 +215,7 @@ p {
   top: 12px;
 }
 
-.sidebar-wrapper .container-block-title {
+.sidebar-wrapper .container-block-title, .container-block-title-legend {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -227,7 +227,7 @@ p {
   display: inline-block;
 }
 
-.sidebar-wrapper .container-block-title::after{
+.sidebar-wrapper .container-block-title::after, .container-block-title-legend::after{
     position: absolute; 
     left: 0; 
     bottom: -7px; 
@@ -251,6 +251,10 @@ p {
   font-size: 3em;
   position: relative;
   top: 5px;
+}
+
+.blk{
+  display: inline-block;
 }
 
 .main-wrapper .section {
@@ -281,8 +285,12 @@ p {
   padding-top: 5px;
 }
 
-.legend-skill-item .skill-col{
-  font-size: 0.8em;
+.legend-skill-item .skill-bar{
+  margin-top: 0;
+}
+
+.legend-skill-item .skill-full, .legend-skill-item .skill-empty{
+  width: 100%;
 }
 
 .bar-bottom{
@@ -533,13 +541,14 @@ ul.trainings li{
 
 .legend-wrapper{
   position: absolute;
-  bottom: 70px
+  bottom: 100px;
+  width: 100%;
 }
 
 .legend-wrapper p{
   font-size: 0.8em;
   font-weight: 100;
-  padding: 25px 0px;
+  padding: 0px;
   text-align: justify;
 }
 
@@ -562,6 +571,7 @@ span.year{
   margin-left: 10px;
   float: right;
   color: #ddd;
+  width: 30px;
 }
 
 /* Extra small devices (phones, less than 768px) */
